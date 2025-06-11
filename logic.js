@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const path = window.location.pathname;
-    const apiBase = 'http://localhost:5000/api';
+    const apiBase = 'https://blog-backend-l8og48k7e-haris-jamals-projects.vercel.app/api/';
 
     const apiRequest = async (endpoint, method = 'GET', body = null, auth = false) => {
         const headers = { 'Content-Type': 'application/json' };
