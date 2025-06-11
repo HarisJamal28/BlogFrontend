@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogWebsite - UserDashboard</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <main>
+        <header>
+            <nav>
+                <ul>
+                    <li></li>
+                </ul>
+                <ul>
+                    <!-- <li>
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./about.html">About</a>
+                    </li> -->
+                    <li>
+                        <button id="logoutBtn"><i class="fa-solid fa-sign-out"></i></b>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <article class="user-dash-container">
+            <section class="sidebar">
+                <ul>
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#profile">My Profile</a>
+                    </li>
+                    <li>
+                        <a href="#create">Create a Post</a>
+                    </li>
+                    <li>
+                        <a href="#myposts">Your Posts</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="user-content">
+                <div class="content" id="home">
+                    <section class="post-content-frame">
+                        <section class="post-frame">
+                            <!-- <div class="post">
+                                <h1 class="post-title">Sample</h1>
+                                <i class="post-date">24th January'2023</i>
+                                <p class="post-content">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat fugit soluta eius non aspernatur ea similique incidunt adipisci? Porro voluptate aliquid beatae commodi ipsum ipsam, aliquam nobis sed quo pariatur?
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat fugit soluta eius non aspernatur ea similique incidunt adipisci? Porro voluptate aliquid beatae commodi ipsum ipsam, aliquam nobis sed quo pariatur?
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat fugit soluta eius non aspernatur ea similique incidunt adipisci? Porro voluptate aliquid beatae commodi ipsum ipsam, aliquam nobis sed quo pariatur?
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat fugit soluta eius non aspernatur ea similique incidunt adipisci? Porro voluptate aliquid beatae commodi ipsum ipsam, aliquam nobis sed quo pariatur?
+                                    <span>...</span>
+                                </p>
+                                <div class="post-credits">
+                                    <ul>
+                                        <li><i>Post Author Username</i></li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <button><i class="fa-solid fa-heart"></i></button>
+                                        </li>
+                                        <li>
+                                            <button><i class="fa-solid fa-comment"></i></button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div> -->
+                        </section>
+                    </section>
+                </div>
+                <div class="content" id="profile">
+                    <article class="blog-form">
+                        <section class="form-frame">
+                            <form action="">
+                                <h1>Your Profile</h1>
+                                <br>
+                                <input type="text" placeholder="Username">
+                                <br>
+                                <input type="text" placeholder="First Name">
+                                <br>
+                                <input type="text" placeholder="Last Name">
+                                <br>
+                                <input type="tel" placeholder="Phone Number">
+                                <br>
+                                <input type="text" placeholder="Country">
+                                <br>
+                                <input type="text" placeholder="City">
+                                <br>
+                                <input type="text" placeholder="Address Line 1">
+                                <br>
+                                <input type="text" placeholder="Address Line 2">
+                                <br>
+                                <button>Update</button>
+                            </form>
+                        </section>
+                    </article>
+                </div>
+                <div class="content" id="create">
+                    <article class="blog-form">
+                        <section class="form-frame">
+                            <form action="" id="createPostForm">
+                                <h1>Create A Post</h1>
+                                <br>
+                                <input type="text" placeholder="Post Title">
+                                <br>
+                                <textarea name="" id="" cols="30" rows="10" placeholder="Enter your post description"></textarea>
+                                <br>
+                                <button>Submit</button>
+                            </form>
+                        </section>
+                    </article>
+                </div>
+                <div class="content" id="myposts">
+                    <section class="post-content-frame">
+                        <section class="post-frame">
+                            <!-- <div class="post">
+                                <h1 class="post-title">Sample</h1>
+                                <i class="post-date">24th January'2023</i>
+                                <p class="post-content">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat fugit soluta eius non aspernatur ea similique incidunt adipisci? Porro voluptate aliquid beatae commodi ipsum ipsam, aliquam nobis sed quo pariatur?
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat fugit soluta eius non aspernatur ea similique incidunt adipisci? Porro voluptate aliquid beatae commodi ipsum ipsam, aliquam nobis sed quo pariatur?
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat fugit soluta eius non aspernatur ea similique incidunt adipisci? Porro voluptate aliquid beatae commodi ipsum ipsam, aliquam nobis sed quo pariatur?
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat fugit soluta eius non aspernatur ea similique incidunt adipisci? Porro voluptate aliquid beatae commodi ipsum ipsam, aliquam nobis sed quo pariatur?
+                                    <span>...</span>
+                                </p>
+                                <div class="post-credits">
+                                    <ul>
+                                        <li><i>Post Author Username</i></li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <button><i class="fa-solid fa-pen"></i></button>
+                                        </li>
+                                        <li>
+                                            <button ><i class="fa-solid fa-trash"></i></button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div> -->
+                        </section>
+                    </section>
+                </div>
+            </section>
+        </article>
+    </main>
+    <script src="./logic.js"></script>
+</body>
+</html>
